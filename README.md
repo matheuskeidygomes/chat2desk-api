@@ -2,7 +2,7 @@
 
 API Backend para sistema de cadastros. Desenvolvida utilizando: Node.js, Typescript e MongoDB.
 
-![Node](https://img.shields.io/badge/Node-v16.14%20(LTS)-brightgreen)
+![Node](https://img.shields.io/badge/Node-v16.17%20(LTS)-brightgreen)
 ![Npm](https://img.shields.io/badge/Npm-v8.3.1-blue) 
 ![License](https://img.shields.io/badge/License-MIT-red)
 ![Docker](https://img.shields.io/badge/Docker-v20.10.12-informational)
