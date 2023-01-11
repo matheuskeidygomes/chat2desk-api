@@ -1,11 +1,10 @@
-# Galeria de Imagens
+# Chat2Desk Back-end API
 
-Galeria de imagens feita com React.js, TailwindCSS, Node.js, MySQL e Docker. Para listar, armazenar e excluir imagens no banco de dados.
+API Backend para sistema de cadastros. Desenvolvida utilizando: Node.js, Typescript e MongoDB.
 
 ![Node](https://img.shields.io/badge/Node-v16.14%20(LTS)-brightgreen)
 ![Npm](https://img.shields.io/badge/Npm-v8.3.1-blue) 
 ![License](https://img.shields.io/badge/License-MIT-red)
-![MySQL](https://img.shields.io/badge/MySQL-v8.0.28-blueviolet)
 ![Docker](https://img.shields.io/badge/Docker-v20.10.12-informational)
 ![Docker-Compose](https://img.shields.io/badge/Docker--compose-v1.29.2-blue)
 
@@ -25,14 +24,10 @@ Galeria de imagens feita com React.js, TailwindCSS, Node.js, MySQL e Docker. Par
 
 # Features
 
-- [x] Listar imagens armazenadas no banco de dados.
-- [x] Cadastrar novas imagens no banco de dados.
-- [x] Excluir imagens do banco de dados.
-- [x] Visualizar imagem específica.
+- [x] Cadastro de novos usuários no sistema.
+- [x] Acesso de usuários no sistema.
+- [x] Visualização, edição e deleção de dados de usuário.
 
-# Screenshots
-
-![image](https://user-images.githubusercontent.com/74063350/147399104-f5f3e7cc-e37b-409f-b967-ad59cbec1ce6.png)
 
 # Pré-requisitos
 
