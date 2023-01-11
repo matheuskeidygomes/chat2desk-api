@@ -1,0 +1,24 @@
+version: '3.3'
+
+services: 
+  api: 
+    container_name: api
+    depends_on: [database]   
+    build: .
+    ports: [3000:3000, 3333:3333]
+    restart: always
+
+  database:
+    container_name: database
+    image: mongo
+    volumes: [data:/backups/database]
+    ports: [27017:27017]
+    restart: always
+      
+volumes: 
+  data: {}
+
+networks:
+  apinetwork: 
+    driver: bridge
+

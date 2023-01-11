@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
+const path_1 = __importDefault(require("path"));
+const Routes_1 = __importDefault(require("./routes/Routes"));
+const Connection_1 = __importDefault(require("./database/Connection"));
+const server = (0, express_1.default)();
+(0, Connection_1.default)();
+server.use((0, cors_1.default)());
+server.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
+server.use(express_1.default.urlencoded({ extended: true }));
+server.use(express_1.default.json());
+server.use(Routes_1.default);
+server.use((err, req, res, next) => res.status(400).json({ error: err.message }));
+server.use((req, res) => res.status(404).send('404 - Not Found!'));
+exports.default = server;
