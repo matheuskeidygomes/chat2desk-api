@@ -49,7 +49,7 @@ export async function getMyUser(req: Request, res: Response): Promise<void> {
     res.json(resJson);
 }
 
-export async function updateMyUser(req: Request, res: Response) {
+export async function updateMyUser(req: Request, res: Response): Promise<void> {
     const { id } = JwtHandler(req.headers.authorization as string);
     const { name, birthdate, email, password } = req.body;
     const isAllString = ValidationHandler.isAStringType(name, birthdate, email, password);
